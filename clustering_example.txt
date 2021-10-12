@@ -1,0 +1,40 @@
+# calculate distortion for a range of number of cluster
+distortions = []
+n_test = range(1, 31)
+
+for i in n_test:
+    km = KMeans(
+        n_clusters=i, init='random',
+        n_init=10, max_iter=300,
+        tol=1e-04, random_state=0
+    )
+    km.fit(X_scaled)
+    distortions.append(km.inertia_)
+
+# plot
+plt.figure(figsize=(18,10))
+plt.plot(n_test, distortions,color='blue', linestyle='dashed', marker='x', markeredgecolor='red', markersize=10)
+plt.title('The Elbow Method')
+plt.xticks(np.arange(0, len(n_test)+2, 5))
+plt.xlabel('Number of clusters')
+plt.ylabel('Distortion')
+plt.grid()
+plt.show()
+
+
+kmeans = KMeans(n_clusters=21, random_state=0,).fit(X_scaled) # By using an Elbow Method for K-means clustering we find the optimal number of clusters to be = 4
+X['cluster'] = kmeans.labels_
+print(X.cluster.value_counts())
+# Run PCA on the data and reduce the dimensions in pca_num_components dimensions
+centroids = np.array(kmeans.cluster_centers_)
+centroids = PCA(n_components=2).fit_transform(centroids)
+reduced_data = PCA(n_components=2).fit_transform(X_scaled)
+results = pd.DataFrame(reduced_data,columns=['pca1','pca2'])
+centroids_x = centroids[:,0]
+centroids_y = centroids[:,1]
+ax = sn.set(rc={"figure.figsize":(18, 10)}) 
+ax = sn.scatterplot(x="pca1", y="pca2", hue=X['cluster'], data=results, palette="bright", alpha=0.6, s=50, legend='full')
+ax = sn.scatterplot(centroids_x, centroids_y, hue=range(kmeans.n_clusters),s=100, palette="bright", ec='black', legend=False, marker='X',ax=ax)
+#ax.set_xscale('log')
+plt.title('K-means Clustering with 2 dimensions')
+plt.show()
