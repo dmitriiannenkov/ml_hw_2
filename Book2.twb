@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Absenteeism_at_work' inline='true' name='federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Absenteeism_at_work' name='textscan.1dqo1pa1acbnaj1d3p1pe1h0kb58'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/danne/Desktop/Machine Learning Class/hw2/ml_hw_2/Absenteeism_at_work.csv' dataRefreshTime='' directory='C:/Users/danne/Desktop/Machine Learning Class/hw2/ml_hw_2' filename='C:/Users/danne/AppData/Local/Temp/TableauTemp/1jumrwu1i24snq13f6b430f49k3t/Absenteeism_at_work.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1dqo1pa1acbnaj1d3p1pe1h0kb58' name='Absenteeism_at_work.csv' table='[Absenteeism_at_work#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:U741:no:A1:U741:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='Reason for absence' ordinal='1' />
+            <column datatype='integer' name='Month of absence' ordinal='2' />
+            <column datatype='integer' name='Day of the week' ordinal='3' />
+            <column datatype='integer' name='Seasons' ordinal='4' />
+            <column datatype='integer' name='Transportation expense' ordinal='5' />
+            <column datatype='integer' name='Distance from Residence to Work' ordinal='6' />
+            <column datatype='integer' name='Service time' ordinal='7' />
+            <column datatype='integer' name='Age' ordinal='8' />
+            <column datatype='integer' name='Work load Average/day' ordinal='9' />
+            <column datatype='integer' name='Hit target' ordinal='10' />
+            <column datatype='integer' name='Disciplinary failure' ordinal='11' />
+            <column datatype='integer' name='Education' ordinal='12' />
+            <column datatype='integer' name='Son' ordinal='13' />
+            <column datatype='integer' name='Social drinker' ordinal='14' />
+            <column datatype='integer' name='Social smoker' ordinal='15' />
+            <column datatype='integer' name='Pet' ordinal='16' />
+            <column datatype='integer' name='Weight' ordinal='17' />
+            <column datatype='integer' name='Height' ordinal='18' />
+            <column datatype='integer' name='Body mass index' ordinal='19' />
+            <column datatype='integer' name='Absenteeism time in hours' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1dqo1pa1acbnaj1d3p1pe1h0kb58' name='Absenteeism_at_work.csv' table='[Absenteeism_at_work#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:U741:no:A1:U741:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='Reason for absence' ordinal='1' />
+            <column datatype='integer' name='Month of absence' ordinal='2' />
+            <column datatype='integer' name='Day of the week' ordinal='3' />
+            <column datatype='integer' name='Seasons' ordinal='4' />
+            <column datatype='integer' name='Transportation expense' ordinal='5' />
+            <column datatype='integer' name='Distance from Residence to Work' ordinal='6' />
+            <column datatype='integer' name='Service time' ordinal='7' />
+            <column datatype='integer' name='Age' ordinal='8' />
+            <column datatype='integer' name='Work load Average/day' ordinal='9' />
+            <column datatype='integer' name='Hit target' ordinal='10' />
+            <column datatype='integer' name='Disciplinary failure' ordinal='11' />
+            <column datatype='integer' name='Education' ordinal='12' />
+            <column datatype='integer' name='Son' ordinal='13' />
+            <column datatype='integer' name='Social drinker' ordinal='14' />
+            <column datatype='integer' name='Social smoker' ordinal='15' />
+            <column datatype='integer' name='Pet' ordinal='16' />
+            <column datatype='integer' name='Weight' ordinal='17' />
+            <column datatype='integer' name='Height' ordinal='18' />
+            <column datatype='integer' name='Body mass index' ordinal='19' />
+            <column datatype='integer' name='Absenteeism time in hours' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U741:no:A1:U741:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>15540</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reason for absence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reason for absence]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Reason for absence</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month of absence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month of absence]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Month of absence</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day of the week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day of the week]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Day of the week</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seasons</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Seasons]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Seasons</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transportation expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transportation expense]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Transportation expense</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance from Residence to Work</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Distance from Residence to Work]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Distance from Residence to Work</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Service time]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Service time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work load Average/day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Work load Average/day]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Work load Average/day</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hit target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hit target]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Hit target</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disciplinary failure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Disciplinary failure]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Disciplinary failure</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Son</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Son]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Son</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Social drinker</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Social drinker]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Social drinker</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Social smoker</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Social smoker]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Social smoker</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pet]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Pet</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Height]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Body mass index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Body mass index]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Body mass index</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Absenteeism time in hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Absenteeism time in hours]</local-name>
+            <parent-name>[Absenteeism_at_work.csv]</parent-name>
+            <remote-alias>Absenteeism time in hours</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Absenteeism_at_work.csv' datatype='table' name='[__tableau_internal_object_id__].[Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Absenteeism_at_work.csv' id='Absenteeism_at_work.csv_1F02BD1DBFF34DC98BF6144BA7448BA7'>
+            <properties context=''>
+              <relation connection='textscan.1dqo1pa1acbnaj1d3p1pe1h0kb58' name='Absenteeism_at_work.csv' table='[Absenteeism_at_work#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:U741:no:A1:U741:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='Reason for absence' ordinal='1' />
+                  <column datatype='integer' name='Month of absence' ordinal='2' />
+                  <column datatype='integer' name='Day of the week' ordinal='3' />
+                  <column datatype='integer' name='Seasons' ordinal='4' />
+                  <column datatype='integer' name='Transportation expense' ordinal='5' />
+                  <column datatype='integer' name='Distance from Residence to Work' ordinal='6' />
+                  <column datatype='integer' name='Service time' ordinal='7' />
+                  <column datatype='integer' name='Age' ordinal='8' />
+                  <column datatype='integer' name='Work load Average/day' ordinal='9' />
+                  <column datatype='integer' name='Hit target' ordinal='10' />
+                  <column datatype='integer' name='Disciplinary failure' ordinal='11' />
+                  <column datatype='integer' name='Education' ordinal='12' />
+                  <column datatype='integer' name='Son' ordinal='13' />
+                  <column datatype='integer' name='Social drinker' ordinal='14' />
+                  <column datatype='integer' name='Social smoker' ordinal='15' />
+                  <column datatype='integer' name='Pet' ordinal='16' />
+                  <column datatype='integer' name='Weight' ordinal='17' />
+                  <column datatype='integer' name='Height' ordinal='18' />
+                  <column datatype='integer' name='Body mass index' ordinal='19' />
+                  <column datatype='integer' name='Absenteeism time in hours' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{55824E4F-6750-4A53-9CCE-014F16F86C51}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Absenteeism_at_work' name='federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v'>
+            <column datatype='integer' name='[Absenteeism time in hours]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Son]' role='measure' type='quantitative' />
+            <column-instance column='[Absenteeism time in hours]' derivation='Count' name='[cnt:Absenteeism time in hours:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Absenteeism time in hours]' derivation='None' name='[none:Absenteeism time in hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Absenteeism time in hours]' derivation='Sum' name='[sum:Absenteeism time in hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Son]' derivation='Sum' name='[sum:Son:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v].[sum:Absenteeism time in hours:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v].[sum:Son:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v].[cnt:Absenteeism time in hours:ok]</rows>
+        <cols>[federated.1l4txwj1j9hd8m1dmr2sa1f3vs4v].[none:Absenteeism time in hours:qk]</cols>
+      </table>
+      <simple-id uuid='{A2006164-B7B3-47EC-8898-60F0EDDFDC09}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A5644A29-274A-40F6-9444-A24701CDC98F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3965641E-70D5-4856-9C58-7EDFAA5989CE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
